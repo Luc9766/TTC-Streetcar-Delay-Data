@@ -1,0 +1,29 @@
+---
+title: "Analysis of the data of TTC streetcaar delay"
+subtitle: "Find the possible causes of delay and solutions"
+author: 
+  - Pengyu Li
+thanks: "Code and data are available at: 
+https://github.com/Luc9766/TTC-Streetcar-Delay-Data."
+date: Sept. 27, 2024
+date-format: long
+abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(ggplot2)
+```
+
+# Introduction
+
+There are 11 routes street car in toronto, which most of them concentrated in Downtown Toronto
