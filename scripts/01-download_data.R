@@ -1,26 +1,17 @@
 #### Preamble ####
-# Purpose: Downloads and saves the data from [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
+# Purpose: Downloads and saves the data from Open Data Toronto
+# Author: Pengyu Li
+# Date: 26 September 2024
+# Contact: pengyu.li@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
 
-
-#### Workspace setup ####
 library(opendatatoronto)
-library(tidyverse)
-# [...UPDATE THIS...]
+library(dplyr)
 
-#### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
+# get package
+package <- show_package("b68cb71b-44a7-4394-97e2-5d2f41462a5d")
+package
 
 
-
-#### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
-
-         
+# save data
+write_csv(raw_ttc_delay_data, "data/raw_data/raw_ttc_delay_data.csv")
